@@ -28,7 +28,7 @@
             </p>
             <button>열기</button>
         </div>
-        <div class="dimmm"></div>
+        <div class="dimm"></div>
         <div class="modal">
             <h3>I am modal</h3>
             <p>
@@ -38,5 +38,25 @@
             </p>
             <button>닫기</button>
         </div>
+        <script>
+            var open = $(".container button")
+            var close = $(".modal button")
+            var dimm = $(".dimm")
+            var modal = $(".modal")
+
+            open.click(function () {
+                // dimm.show()
+                // modal.show()
+                dimm.fadeIn() //모달창이서서히 나타남
+                modal.fadeIn()
+            })
+
+            close.click(function () {
+                // dimm.hide()
+                // modal.hide()
+                dimm.fadeOut()
+                modal.fadeOut()
+            })
+        </script>
     </body>
 </html>
