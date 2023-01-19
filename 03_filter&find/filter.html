@@ -36,10 +36,10 @@
 
             //2.filter
             //쓰는법 $(선택자).filter(구문,,)
-            // var oddTd = $("td").filter(":even")
-            // $.each(oddTd, function (index, td) {
-            //     $(td).css("backgroundColor", "red")
-            // })
+            var oddTd = $("td").filter(":even")
+            $.each(oddTd, function (index, td) {
+                $(td).css("backgroundColor", "red")
+            })
 
             // $("td").filter(function (index, el) {
             //     if (index % 2 == 1) {
