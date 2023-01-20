@@ -12,6 +12,10 @@
         />
         <link
             rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+        />
+        <link
+            rel="stylesheet"
             href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
         <link rel="stylesheet" href="./style.css" />
@@ -21,19 +25,63 @@
             <div class="header">
                 <h1>로고</h1>
                 <ul class="nav">
-                    <li><a href="#x">홈</a></li>
-                    <li><a href="#x">소개</a></li>
-                    <li><a href="#x">서비스</a></li>
-                    <li><a href="#x">블로그</a></li>
-                    <li><a href="#x">연락하기</a></li>
+                    <li>
+                        <a href="#x">소개</a>
+                        <ul>
+                            <li><a href="#x">인사말</a></li>
+                            <li><a href="#x">주요연혁</a></li>
+                            <li><a href="#x">수상내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#x">서비스</a>
+                        <ul>
+                            <li><a href="#x">리서치</a></li>
+                            <li><a href="#x">기업윤리</a></li>
+                            <li><a href="#x">기업윤리규범</a></li>
+                            <li><a href="#x">기업윤리 상담센터</a></li>
+                            <li><a href="#x">프라이버시 센터 </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#x">블로그</a>
+                        <ul>
+                            <li><a href="#x">보도자료</a></li>
+                            <li><a href="#x">TV광고</a></li>
+                            <li><a href="#x">미디어행사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#x">포트폴리오</a>
+                        <ul>
+                            <li><a href="#x">기업지배구조</a></li>
+                            <li><a href="#x">주주구성</a></li>
+                            <li><a href="#x">이사회</a></li>
+                            <li><a href="#x">정관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#x">연락하기</a>
+                        <ul>
+                            <li><a href="#x">인사말</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <div class="user"><i class="xi-user"></i></div>
             </div>
 
             <!-- slide -->
-            <div class="slide_01">
-                <div class="item item_01"></div>
-                <div class="item item_02"></div>
-                <div class="item item_03"></div>
+            <div class="slider">
+                <div class="slide_01">
+                    <div class="item item_01"></div>
+                    <div class="item item_02"></div>
+                    <div class="item item_03"></div>
+                </div>
+
+                <div class="btns">
+                    <img class="prev" src="../imges/prev_btn.png" alt="" />
+                    <img class="next" src="../imges/next_btn.png" alt="" />
+                </div>
             </div>
 
             <!-- main -->
@@ -119,7 +167,11 @@
         <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
         <script>
-            $(".slide_01").slick({})
+            $(".slide_01").slick({
+                dots: true,
+                nextArrow: $(".next"),
+                prevArrow: $(".prev"),
+            })
         </script>
         <!-- //오토플레이:자동으로 슬라이드를 넘겨줌 -->
     </body>

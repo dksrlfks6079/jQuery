@@ -21,6 +21,13 @@ ul {
     justify-content: space-between;
 }
 
+.header .user {
+    font-size: 24px;
+}
+
+.header h1 {
+}
+
 .header .nav {
     display: flex;
 }
@@ -49,6 +56,71 @@ ul {
     background-image: url("../imges/slide_03.jpg");
 }
 
+/* slick_custom */
+
+.slider {
+    position: relative;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns img {
+    width: 46px;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.slide_01 {
+    /* width: 800px;
+    margin: 0 auto; */
+}
+
+.slide_01 .slick-dots {
+    bottom: 20px;
+}
+
+.slide_01 .slick-dots li {
+    width: initial;
+}
+.slide_01 .slick-dots li button {
+    background-color: #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    opacity: 0.2;
+    transition: width 0.3s;
+}
+.slide_01 .slick-dots li button::before {
+    display: none;
+}
+.slide_01 .slick-dots li.slick-active button {
+    opacity: 0.7;
+    width: 60px;
+}
+
+.slide_01 .slick-prev {
+    left: 25px;
+    z-index: 100;
+}
+.slide_01 .slick-next {
+    right: 25px;
+    z-index: 100;
+}
+
+.slide_01 .slick-prev:before,
+.slide_01 .slick-next:before {
+    font-size: 40px;
+    color: #666;
+}
 /* main */
 
 .main {
